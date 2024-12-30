@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Recommendations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Link đến tệp CSS -->
+</head>
+<body>
+    <header>
+        <img src="sanrio%20logo.png" class="header-image">
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="page1.html">Top Recommendations</a>
+        <a href="page2.html">Promotions</a>
+        <a href="page3.html">Booking</a>
+    </nav>
+
+    <main>
+        <h2>Our Top Recommendations</h2>
+        
+        <div class="recommendation">
+            <h3>1. Hello Kitty Mini Snow Globe (50th Anniv. The Future In Our Eyes)</h3>
+            <p>Make your room more festive with our Hello Kitty mini snow globe from the 50th anniversary collection.</p>
+            <img src="kitty%20snow%20globe.jpg" alt="Hello Kitty 50th Anniversary Snow Globe">
+            <div class="price">Price: RM 150</div>
+            <a href="#" class="buy-button" onclick="buyNow('Hello Kitty Mini Snow Globe')">Buy Now</a>
+        </div>
+        
+        <div class="recommendation">
+            <h3>2. Custom Character Cupcakes Toy Kit</h3>
+            <p>Choose your favorite Sanrio characters to feature on adorable 'cupcakes'.</p>
+            <img src="cup%20cake.png" alt="Sanrio Custom Character Cupcakes">
+            <div class="price">Price: RM 99</div>
+            <a href="#" class="buy-button" onclick="buyNow('Custom Character Cupcakes Toy Kit')">Buy Now</a>
+        </div>
+        
+        <div class="recommendation">
+            <h3>3. Hello Kitty 2025 Die-Cut Wall Calendar</h3>
+            <p>Bring color and joy to 2025 with our Hello Kitty and Friends wall calendar!</p>
+            <img src="kitty%20wall%20calendar.jpg" alt="Hello Kitty 2025 Wall Calendar">
+            <div class="price">Price: RM 80</div>
+            <a href="#" class="buy-button" onclick="buyNow('Hello Kitty 2025 Die-Cut Wall Calendar')">Buy Now</a>
+        </div>
+        
+        <div class="recommendation">
+            <h3>4. Hello Kitty X Friends Loungefly Winter Wonderland Mini Backpack</h3>
+            <p>Carry your "wonderland" everywhere with this adorable Sanrio mini backpack!</p>
+            <img src="pouch.jpg" alt="Sanrio Winter Wonderland Mini Backpack">
+            <div class="price">Price: RM 220</div>
+            <a href="#" class="buy-button" onclick="buyNow('Hello Kitty X Friends Loungefly Winter Wonderland Mini Backpack')">Buy Now</a>
+        </div>
+        
+        <button id="scrollTopBtn" onclick="scrollToTop()">Back to Top</button>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SANRIO SWEET SPOT CO. LTD. All rights reserved. Diep Luu Hong Hanh ADT2304303 Advertising</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to show alert when Buy Now is clicked
+        function buyNow(productName) {
+            alert("Thank you for your interest in buying the " + productName + "!");
+        }
+
+        // Function to scroll to top of the page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

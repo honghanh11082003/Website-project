@@ -1,0 +1,644 @@
+/* Cấu hình chung */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #4a4a4a;
+    background-color: #fefbf6;
+}
+
+/* Header Logo */
+header .header-center-image {
+    display: block;
+    margin: 12px auto;
+    width: 120px;
+}
+
+/* Banner */
+.banner {
+    display: none;
+}
+
+/* Navbar */
+nav {
+    background-color: #f2e1d9; /* Màu be nhạt */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 15px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6B4E71; /* Màu chữ nâu */
+    font-size: 1.1em; 
+    font-family: 'Poppins', sans-serif; /* Font chữ chính */
+    padding: 8px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #964B00; /* Màu hồng nhạt khi hover */
+}
+
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 12px;
+    background-color: #fff;
+    margin: 12px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    max-width: 800px;
+}
+
+#about h2 {
+    font-size: 30px;
+    color: #a17a5d;
+}
+
+#about img {
+    width: 65%;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
+/* Main Content */
+main h3, main h4 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 500;
+    padding: 6px 0;
+}
+
+main h3 {
+    font-size: 30px; /* Đồng bộ với Booking */
+    color: #a17a5d;
+}
+
+main h4 {
+    font-size: 30px;
+    color: #7b5a40;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    text-align: center;
+    margin: 12px auto;
+    max-width: 320px;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(75, 45, 30, 0.6);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.carousel button.left {
+    left: -16px;
+}
+
+.carousel button.right {
+    right: -16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff;
+    margin-top: 12px;
+    color: #666;
+    font-size: 11px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Khoảng cách giữa các phần tử */
+section, main, footer {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* Cấu hình chung */
+@import url('https://fonts.googleapis.com/css2family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Dancing Scripts', cursive; /* Font chữ chính */
+    background-color: #f8f1f7; /* Màu nền be nhạt */
+    color: #6B4E71; /* Màu chữ nâu đậm */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff; /* Màu trắng cho header */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 80px; /* Kích cỡ logo */
+    height: auto;
+    margin-top: 5px; /* Đưa logo gần đỉnh header */
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ khi hover */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #f2e1d9; /* Màu be nhạt */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 15px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6B4E71; /* Màu chữ nâu */
+    font-size: 1.1em; 
+    font-family: 'Poppins', sans-serif; /* Font chữ chính */
+    padding: 8px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #964B00; /* Màu hồng nhạt khi hover */
+}
+
+/* Nội dung chính */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 100px auto; /* Thêm khoảng cách để không bị che khuất bởi header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive; /* Font chữ tiêu đề */
+    color: #964B00; 
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.8em; /* Giảm kích cỡ chữ */
+    font-family: 'Dancing Script', cursive; /* Font chữ tiêu đề */
+    color: #964B00; /* Màu nâu đậm */
+}
+
+
+h3 {
+    font-size: 2em;
+}
+
+/* Các phần giới thiệu sản phẩm */
+.recommendation {
+    background-color: #ffffff; /* Màu trắng cho sản phẩm */
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.recommendation:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.recommendation img {
+    display: block;
+    margin: 15px auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    transition: opacity 0.3s;
+}
+
+.recommendation img:hover {
+    opacity: 0.9;
+}
+
+.price {
+    font-size: 1.2em; 
+    color: #E74C3C; /* Màu đỏ đậm cho giá */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #d85b7b; /* Màu hồng nhấn */
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #bf4a66; /* Màu đỏ sẫm hơn khi hover */
+}
+
+/* Footer */
+footer {
+    background-color: #f2e1d9; /* Màu be cho footer */
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #6B4E71; /* Màu chữ nâu đậm */
+}
+
+/* Global Styles */
+body {
+    font-family: 'Quicksand', sans-serif; /* Chỉnh font chữ toàn bộ trang */
+    background-color: #f0f8ff;
+    color: #6B4E71;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #FFCDD2;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #6B4E71;
+    font-family: 'Dancing Scripts, cursive; /* Font chữ tiêu đề */
+    font-weight: 600;
+    padding: 12px 20px;
+    margin: 0 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #964B00.;
+    color: white;
+}
+
+/* Main Content Styles */
+main {
+    padding: 50px 30px;
+    margin-top: 120px; /* Adjusted margin to prevent overlap with fixed header */
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Promotions Content */
+.promotions-content {
+    text-align: left;
+}
+
+/* Headings */
+h2 {
+    font-family: 'Pacifico', cursive; /* Font chữ tiêu đề */
+    font-size: 36px;
+    color: #6B4E71;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #FF69B4;
+    margin-bottom: 20px;
+}
+
+/* Promotions List Styles */
+.promotions-list {
+    font-size: 18px;
+    color: #6B4E71;
+    margin-bottom: 40px;
+}
+
+.promotions-list li {
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #6B4E71;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #FF69B4;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #FF69B4;
+    outline: none;
+}
+
+button {
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #FF1493;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #FFCDD2;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top: 3px solid #FF69B4;
+    font-size: 14px;
+    color: #6B4E71;
+}
+
+.footer-text {
+    font-weight: 600;
+}
+
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+/* Body */
+body {
+    font-family: 'Dancing Script', cursive; /* Changed to Dancing Script for cute font */
+    background-color: #FAF3F5; /* Soft beige background */
+    color: #4E4E4E; /* Dark brown text */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    position: relative;
+    text-align: center;
+    padding: 10px 0; /* Smaller header padding */
+    background-color: #FFF; /* White background */
+}
+
+.header-image {
+    width: 120px; /* Smaller logo size */
+    height: auto;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+nav {
+    background-color: #FFF; /* White background for the nav */
+    padding: 8px 0;
+    font-family: 'Dancing Script', cursive; /* Dancing Script for navigation */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4E4E4E; /* Dark brown text */
+    font-weight: 500;
+    padding: 7px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #C7A39D; /* Beige background on hover/active */
+    color: #FFF; /* White text on hover */
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #FFF; /* White background */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-family: 'Dancing Script', cursive; /* Dancing Script for headings */
+    color: #4E4E4E; /* Dark brown for titles */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6F6F6F; /* Lighter brown for paragraph text */
+}
+
+/* Form */
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #4E4E4E; /* Dark brown for label text */
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    margin-top: 5px;
+    background-color: #F4F1EC; /* Soft beige background for inputs */
+    font-family: 'Dancing Script', cursive; /* Dancing Script for inputs */
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #C7A39D; /* Beige border on focus */
+    outline: none;
+}
+
+form button {
+    background: #C7A39D; /* Beige button background */
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+    font-family: 'Dancing Script', cursive; /* Dancing Script for buttons */
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #B28F7D; /* Darker brown on hover */
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid #DDD;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+fieldset legend {
+    font-weight: 600;
+    color: #4E4E4E; /* Dark brown for legend */
+    font-family: 'Dancing Script', cursive; /* Dancing Script for legend */
+}
+
+/* Footer */
+footer {
+    background: #FFF; /* White background for footer */
+    color: #4E4E4E; /* Dark brown text */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    font-family: 'Dancing Script', cursive; /* Dancing Script for footer */
+    border-top: 2px solid #C7A39D; /* Beige top border */
+}
+
+footer a {
+    color: #4E4E4E; /* Dark brown for links */
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #C7A39D; /* Beige on hover */
+}

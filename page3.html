@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your visit to Sanrio Sweet Spot, a pastel-themed café and store experience.">
+    <meta name="author" content="Diep Luu Hong Hanh">
+    <title>Sanrio Sweet Spot | Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="sanrio%20logo.png" class="header-image">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page1.html">Top Recommendations</a></li>
+                <li><a href="page2.html">Promotions</a></li>
+                <li><a href="page3.html" class="active">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section>
+                <h2>Book Your Visit</h2>
+                <p>Welcome to <strong>Sanrio Sweet Spot</strong>! Please fill out the form below to secure your spot.</p>
+                <form id="bookingForm" action="#" method="POST" aria-label="Booking Form">
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <!-- Booking Date -->
+                    <div class="form-group">
+                        <label for="date">Booking Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <!-- Services -->
+                    <fieldset>
+                        <legend>Select Your Services</legend>
+                        <label><input type="checkbox" name="service" value="cafe"> Sanrio Café</label>
+                        <label><input type="checkbox" name="service" value="store"> Sanrio Store</label>
+                    </fieldset>
+
+                    <!-- Preferred Time -->
+                    <fieldset>
+                        <legend>Preferred Session Time</legend>
+                        <label><input type="radio" name="session" value="morning" required> Morning</label>
+                        <label><input type="radio" name="session" value="afternoon" required> Afternoon</label>
+                        <label><input type="radio" name="session" value="evening" required> Evening</label>
+                    </fieldset>
+
+                    <!-- Number of Guests -->
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="" disabled selected>Select number of guests</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4+">4+</option>
+                        </select>
+                    </div>
+
+                    <!-- Special Requests -->
+                    <div class="form-group">
+                        <label for="requests">Special Requests</label>
+                        <textarea id="requests" name="requests" rows="4" placeholder="Add any specific requests here"></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="form-group">
+                        <button type="submit" class="btn">Book Now</button>
+                    </div>
+                </form>
+                <div id="confirmationMessage" style="color: green; margin-top: 10px;"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SANRIO SWEET SPOT CO. LTD. All rights reserved. Diep Luu Hong Hanh ADT2304303 Advertising</p>
+        </div>
+    </footer>
+
+    <!-- Link to External JavaScript -->
+    <script src="booking.js"></script> <!-- Path to the external JavaScript file -->
+</body>
+</html>
